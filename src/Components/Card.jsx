@@ -1,11 +1,10 @@
-import React from 'react'
 import styles from "./Card.module.css"
 
-const Card = () => {
+const Card = ({nombre, bandaFavorita}) => {
     return (
         <div className={styles.card}>
-            <h1>Hola!</h1>
-            <p>Soy una tarjeta.</p>
+            <h1>Hola {nombre}!</h1>
+            <h3>Tu banda favorita es: {bandaFavorita}</h3>
         </div>
     )
 }
